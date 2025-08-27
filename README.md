@@ -5,6 +5,7 @@ Este é um projeto acadêmico focado na criação de uma landing page que simula
 ---
 
 🚀 Objetivo do Projeto
+
 O principal objetivo é criar uma página estática que aplique os conceitos essenciais de Front-end Design aprendidos em sala de aula, incluindo:
 
 Estrutura HTML5 válida e semântica.
@@ -22,6 +23,7 @@ Criação de um layout responsivo que se adapte a diferentes tamanhos de tela.
 ---
 
 🛠️ Conteúdo da Página
+
 A página foi desenvolvida com as seguintes seções e informações:
 
 Título do Anúncio: Nome do imóvel.
@@ -39,6 +41,7 @@ Avaliações: Duas avaliações simuladas, incluindo nome do hóspede e seu come
 ---
 
 🎨 Tecnologias e Estilização
+
 Linguagens: HTML5 e CSS3.
 
 Fontes: As fontes utilizadas foram importadas do Google Fonts.
