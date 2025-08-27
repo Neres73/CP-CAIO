@@ -1,4 +1,5 @@
 📌 Sobre o Projeto
+
 Este é um projeto acadêmico focado na criação de uma landing page que simula um anúncio de imóvel da plataforma Airbnb. O objetivo principal é praticar e demonstrar o uso de HTML e CSS para construir uma página web estática, responsiva e visualmente organizada. O projeto se baseia em um anúncio real para replicar sua estrutura e design.
 
 ---
