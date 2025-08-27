@@ -1,10 +1,10 @@
-📌 Sobre o Projeto
+##📌 Sobre o Projeto
 
 Este é um projeto acadêmico focado na criação de uma landing page que simula um anúncio de imóvel da plataforma Airbnb. O objetivo principal é praticar e demonstrar o uso de HTML e CSS para construir uma página web estática, responsiva e visualmente organizada. O projeto se baseia em um anúncio real para replicar sua estrutura e design.
 
 ---
 
-🚀 Objetivo do Projeto
+##🚀 Objetivo do Projeto
 
 O principal objetivo é criar uma página estática que aplique os conceitos essenciais de Front-end Design aprendidos em sala de aula, incluindo:
 
@@ -22,7 +22,7 @@ Criação de um layout responsivo que se adapte a diferentes tamanhos de tela.
 
 ---
 
-🛠️ Conteúdo da Página
+##🛠️ Conteúdo da Página
 
 A página foi desenvolvida com as seguintes seções e informações:
 
@@ -40,7 +40,7 @@ Avaliações: Duas avaliações simuladas, incluindo nome do hóspede e seu come
 
 ---
 
-🎨 Tecnologias e Estilização
+##🎨 Tecnologias e Estilização
 
 Linguagens: HTML5 e CSS3.
 
@@ -52,7 +52,7 @@ Estrutura: O código foi organizado em uma estrutura de pastas simples e coerent
 
 ---
 
-🔗 Informações de Entrega
+##🔗 Informações de Entrega
 
 Anúncio Original:https: https://www.airbnb.com.br/rooms/30497949?check_in=2025-08-29&check_out=2025-08-31&photo_id=628618755&source_impression_id=p3_1756245157_P31SZfHCSdpt29Io&previous_page_section_name=1000
 
