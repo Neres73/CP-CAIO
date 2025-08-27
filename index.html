@@ -1,49 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviação apartamento</title>
+    <title>Apartamento Praia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="imgs/logoairbnb.png" alt="logo airbnb">
-            airbnb
-        </div>
 
-        <div class="barra-pesquisa">
-            <div class="procurar">Qualquer lugar</div>
-            <div class="procurar">Qualquer semana</div>
-            <div class="procurar">Hóspedes</div>
-            <div class="pesquisa">
-                <img src="imgs/icone-loupe-noir.png" alt="ícone de lupa">
-            </div>
+<body>
+    <header class="navegação">
+        <div class="logo-area">
+            <img src="imgs/logoairbnb.png" alt="Logo Airbnb">
         </div>
-        
-        <div class="opções-direita">
-            <div class="anfitriao">Torne-se um anfitrião</div>
-            <div class="menu-perfil">
-                <img src="imgs/menu.png" alt="Menu lateral">
-                <img src="imgs/globe.webp" alt="opções de compra">
-            </div>
+        <div class="barra-pesquisa">
+            <span>Qualquer lugar</span>
+            <span>Qualquer semana</span>
+            <span>Hóspedes?</span>
+            <button>
+                <img src="imgs/icone-loupe-noir.png" alt="Buscar">
+            </button>
+        </div>
+        <div class="ações">
+            <a href="#">Anuncie seu espaço</a>
+            <img src="imgs/globe.webp" alt="Idioma">
+            <img src="imgs/menu.png" alt="Menu">
         </div>
     </header>
-    <main>
-        <h1>Aviação apartamento com vista e excelente ambiente</h1>
 
-        <div class="galeria">
-            <div class="foto-grande">
-                <img src="imgs/apartamento1.jpg" alt="Imagem do apartamento">
+    <section class="container-galeria">
+        <h1>Aviação apartamento com vista e excelente ambiente</h1>
+        <div class="grid-galeria">
+            <div class="foto-principal">
+                <img src="apartamento/foto-apartamento.avif" alt="Foto do Apartamento">
             </div>
-            <div class="fotos-apartamento">
-                <img src="apartamento/foto-apartamento.avif" alt="foto do prédio">
-                <img src="apartamento/foto-bancada.avif" alt="foto da bancada">
-                <img src="apartamento/foto-sala.avif" alt="foto da sala">
-                <img src="apartamento/foto-vista.avif" alt="foto da vista">
+            <div class="fotos-secundarias">
+                <img src="apartamento/foto-vista.avif" alt="Vista da praia">
+                <img src="apartamento/foto-bancada.avif" alt="Cozinha bancada">
+                <img src="apartamento/foto-sala.avif" alt="Sala de estar">
+                <div class="ultima-foto">
+                    <img src="apartamento/foto-cozinha.webp" alt="Cozinha">
+                    <button class="botão-fotos">Mostrar todas as fotos</button>
+                </div>
             </div>
         </div>
+    </section>
+
+    <main>
+        <section>
+            <h2>Descrição</h2>
+            <p>
+                Apartamento aconchegante localizado no bairro Aviação, com uma vista incrível para o mar e um ambiente
+                confortável para famílias e amigos.
+            </p>
+        </section>
+        <section>
+            <h2>Comodidades</h2>
+            <ul>
+                <li>Wi-Fi</li>
+                <li>Ar-condicionado</li>
+                <li>Cozinha equipada</li>
+                <li>TV a cabo</li>
+                <li>Estacionamento</li>
+            </ul>
+        </section>
+        <section class="avaliacao-geral">
+            <div class="nota-total">
+                <img src="imgs/estrela.png" alt="Estrela">
+                <h2>4,89</h2>
+                <p>Preferido dos hóspedes</p>
+                <small>
+                    Esta acomodação está no <strong>top 5%</strong> dos anúncios elegíveis, baseado em avaliações,
+                    comentários e confiabilidade
+                </small>
+            </div>
+            <div class="detalhes-nota">
+                <div class="detalhe">
+                    <span>Avaliação geral</span>
+                    <div class="barra">
+                        <div class="preenchido" style="width: 5%;"></div>
+                    </div>
+                </div>
+                <div class="detalhe">
+                    <span>Limpeza</span>
+                    <p>4,9</p>
+                </div>
+                <div class="detalhe">
+                    <span>Exatidão do anúncio</span>
+                    <p>4,9</p>
+                </div>
+                <div class="detalhe">
+                    <span>Check-in</span>
+                    <p>4,9</p>
+                </div>
+                <div class="detalhe">
+                    <span>Comunicação</span>
+                    <p>5,0</p>
+                </div>
+                <div class="detalhe">
+                    <span>Localização</span>
+                    <p>5,0</p>
+                </div>
+                <div class="detalhe">
+                    <span>Custo-benefício</span>
+                    <p>4,9</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="avaliacoes">
+            <h2>Avaliações</h2>
+            <article>
+                <h3>João</h3>
+                <p>Excelente estadia, apartamento limpo e organizado, além da vista incrível!</p>
+            </article>
+            <article>
+                <h3>Maria</h3>
+                <p>A localização é perfeita, recomendo muito!</p>
+            </article>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 - Apartamento na Praia</p>
+    </footer>
 </body>
+
 </html>
