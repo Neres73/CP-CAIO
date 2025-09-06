@@ -1,129 +1,377 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartamento Praia</title>
+    <title>Airbnb - Aviação apartamento com vista</title>
+    
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
-
 <body>
-    <header class="navegação">
-        <div class="logo-area">
-            <img src="imgs/logoairbnb.png" alt="Logo Airbnb">
+    <header class="cabecalho">
+        <div class="logo-container">
+            <img src="imgs/logoairbnb.png" alt="Logo Airbnb" class="logo-imagem">
+            <span class="logo-texto">airbnb</span>
         </div>
         <div class="barra-pesquisa">
-            <span>Qualquer lugar</span>
-            <span>Qualquer semana</span>
-            <span>Hóspedes?</span>
-            <button>
-                <img src="imgs/icone-loupe-noir.png" alt="Buscar">
-            </button>
+            <div class="item-pesquisa">Qualquer lugar</div>
+            <div class="item-pesquisa">Qualquer semana</div>
+            <div class="item-pesquisa com-icone">Hóspedes?
+                <div class="icone-pesquisa">
+                    <i data-feather="search"></i>
+                </div>
+            </div>
         </div>
-        <div class="ações">
-            <a href="#">Anuncie seu espaço</a>
-            <img src="imgs/globe.webp" alt="Idioma">
-            <img src="imgs/menu.png" alt="Menu">
+        <div class="menu-usuario">
+            <div class="link-anfitriao">Torne-se um anfitrião</div>
+            <div class="icone-globo">
+                <i data-feather="globe"></i>
+            </div>
+            <div class="menu-perfil">
+                <i data-feather="menu"></i>
+                <i data-feather="user"></i>
+            </div>
         </div>
     </header>
 
-    <section class="container-galeria">
-        <h1>Aviação apartamento com vista e excelente ambiente</h1>
-        <div class="grid-galeria">
-            <div class="foto-principal">
-                <img src="apartamento/foto-apartamento.avif" alt="Foto do Apartamento">
-            </div>
-            <div class="fotos-secundarias">
-                <img src="apartamento/foto-vista.avif" alt="Vista da praia">
-                <img src="apartamento/foto-bancada.avif" alt="Cozinha bancada">
-                <img src="apartamento/foto-sala.avif" alt="Sala de estar">
-                <div class="ultima-foto">
-                    <img src="apartamento/foto-cozinha.webp" alt="Cozinha">
-                    <button class="botão-fotos">Mostrar todas as fotos</button>
+    <main class="conteudo">
+        <div class="cabecalho-anuncio">
+            <h1 class="titulo-anuncio">Aviação apartamento com vista e excelente ambiente</h1>
+            <div class="acoes">
+                <div class="botao-acao">
+                    <span><i data-feather="upload"></i></span>
+                    Compartilhar
+                </div>
+                <div class="botao-acao">
+                    <span><i data-feather="heart"></i></span>
+                    Salvar
                 </div>
             </div>
         </div>
-    </section>
 
-    <main>
-        <section>
-            <h2>Descrição</h2>
-            <p>
-                Apartamento aconchegante localizado no bairro Aviação, com uma vista incrível para o mar e um ambiente
-                confortável para famílias e amigos.
-            </p>
-        </section>
-        <section>
-            <h2>Comodidades</h2>
-            <ul>
-                <li>Wi-Fi</li>
-                <li>Ar-condicionado</li>
-                <li>Cozinha equipada</li>
-                <li>TV a cabo</li>
-                <li>Estacionamento</li>
-            </ul>
-        </section>
-        <section class="avaliacao-geral">
-            <div class="nota-total">
-                <img src="imgs/estrela.png" alt="Estrela">
-                <h2>4,89</h2>
-                <p>Preferido dos hóspedes</p>
-                <small>
-                    Esta acomodação está no <strong>top 5%</strong> dos anúncios elegíveis, baseado em avaliações,
-                    comentários e confiabilidade
-                </small>
-            </div>
-            <div class="detalhes-nota">
-                <div class="detalhe">
-                    <span>Avaliação geral</span>
-                    <div class="barra">
-                        <div class="preenchido" style="width: 5%;"></div>
+        <div class="galeria">
+            <div class="imagem-principal"></div>
+            <div class="outras-fotos">
+                <div class="imagem-menor" id="foto-2"></div>
+                <div class="imagem-menor" id="foto-3"></div>
+                <div class="imagem-menor" id="foto-4"></div>
+                <div class="imagem-menor" id="foto-5">
+                    <div class="mostrar-todas-fotos">
+                        <i data-feather="grid"></i>
+                        Mostrar todas as fotos
                     </div>
                 </div>
-                <div class="detalhe">
-                    <span>Limpeza</span>
-                    <p>4,9</p>
-                </div>
-                <div class="detalhe">
-                    <span>Exatidão do anúncio</span>
-                    <p>4,9</p>
-                </div>
-                <div class="detalhe">
-                    <span>Check-in</span>
-                    <p>4,9</p>
-                </div>
-                <div class="detalhe">
-                    <span>Comunicação</span>
-                    <p>5,0</p>
-                </div>
-                <div class="detalhe">
-                    <span>Localização</span>
-                    <p>5,0</p>
-                </div>
-                <div class="detalhe">
-                    <span>Custo-benefício</span>
-                    <p>4,9</p>
-                </div>
             </div>
-        </section>
+        </div>
 
-        <section class="avaliacoes">
-            <h2>Avaliações</h2>
-            <article>
-                <h3>João</h3>
-                <p>Excelente estadia, apartamento limpo e organizado, além da vista incrível!</p>
-            </article>
-            <article>
-                <h3>Maria</h3>
-                <p>A localização é perfeita, recomendo muito!</p>
-            </article>
+        <section class="info-anuncio">
+            <div class="info-principal">
+                <div class="detalhes-gerais">
+                    <h2>Espaço inteiro: apartamento em Aviação, Brasil</h2>
+                    <p>6 hóspedes · 2 quartos · 2 camas · 1 banheiro</p>
+                </div>
+
+                <div class="destaque">
+                    <div class="destaque-topo">
+                        <div class="icone-destaque">
+                            <i data-feather="award"></i>
+                        </div>
+                        <div class="texto-destaque">
+                            <h3>Preferido dos Hóspedes</h3>
+                            <p>Uma das acomodações no Airbnb que fazem mais sucesso com os hóspedes</p>
+                        </div>
+                    </div>
+                    <div class="avaliacoes">
+                        <span class="pontuacao">4,89 <i data-feather="star" class="estrela"></i></span>
+                        <span class="total-avaliacoes">244 avaliações</span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="perfil-anfitriao">
+                    <div class="info-anfitriao">
+                        <h3>Anfitrião(a): Marcelo</h3>
+                        <p>7 anos hospedando</p>
+                    </div>
+                    <img src="apartamento/anfi.avif" alt="Foto de perfil de Marcelo" class="foto-perfil">
+                </div>
+
+                <hr>
+
+                <div class="caracteristicas">
+                    <div class="caracteristica-item">
+                        <i data-feather="check-circle"></i>
+                        <p>
+                            <b>Experiência de check-in excepcional</b><br>
+                            Hóspedes recentes deram 5 estrelas para o processo de check-in.
+                        </p>
+                    </div>
+                    <div class="caracteristica-item">
+                        <i data-feather="map-pin"></i>
+                        <p>
+                            <b>Paz e tranquilidade</b><br>
+                            Os hóspedes dizem que esta acomodação fica em uma região tranquila.
+                        </p>
+                    </div>
+                    <div class="caracteristica-item">
+                        <i data-feather="message-circle"></i>
+                        <p>
+                            <b>Comunicação excepcional com o anfitrião</b><br>
+                            Hóspedes recentes deram 5 estrelas para Marcelo pela comunicação.
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="descricao">
+                    <p>
+                        Gostoso apartamento, com boa iluminação e uma vista maravilhosa, prédio de frente pro mar, garagem pra um automóvel, bastante aconchegante, serão bem vinda todas as pessoas pra todos os fins.
+                    </p>
+                </div>
+                
+                <hr>
+
+                <section class="secao quartos">
+                    <h2>Onde você vai dormir</h2>
+                    <div class="container-quartos">
+                        <div class="cartao-quarto">
+                            <div class="imagem-quarto" style="background-image: url('apartamento/ap1.avif');"></div>
+                            <div class="info-quarto">
+                                <h3>Quarto 1</h3>
+                                <p>1 cama queen</p>
+                            </div>
+                        </div>
+                        <div class="cartao-quarto">
+                            <div class="imagem-quarto" style="background-image: url('apartamento/ap2.avif');"></div>
+                            <div class="info-quarto">
+                                <h3>Quarto 2</h3>
+                                <p>1 cama de solteiro, 4 colchões extra</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+                
+                <section class="secao comodidades">
+                    <h2>O que esse lugar oferece</h2>
+                    <div class="lista-comodidades">
+                        <div class="comodidade-item"><i data-feather="home"></i><span>Cozinha</span></div>
+                        <div class="comodidade-item"><i data-feather="wifi"></i><span>Wi-Fi</span></div>
+                        <div class="comodidade-item"><i data-feather="compass"></i><span>Estacionamento incluído</span></div>
+                        <div class="comodidade-item"><i data-feather="gitlab"></i><span>Permitido animais</span></div>
+                        <div class="comodidade-item"><i data-feather="tv"></i><span>TV</span></div>
+                        <div class="comodidade-item"><i data-feather="chevrons-up"></i><span>Elevador</span></div>
+                        <div class="comodidade-item"><i data-feather="droplet"></i><span>Máquina de Lavar</span></div>
+                        <div class="comodidade-item"><i data-feather="sunrise"></i><span>Pátio ou varanda compartilhada</span></div>
+                        <div class="comodidade-item"><i data-feather="bell"></i><span>Alarme de monóxido de carbono</span></div>
+                        <div class="comodidade-item"><i data-feather="alert-octagon"></i><span>Detector de fumaça</span></div>
+                    </div>
+                    <button class="botao-comodidades">Mostrar todas as 18 comodidades</button>
+                </section>
+                
+                <section class="secao-avaliacoes-detalhes">
+                    <div class="avaliacao-principal-detalhes">
+                        <div class="wreath-container">
+                            <img src="icone/direita.avif" alt="" class="wreath-left">
+                            <span class="nota-principal">4,89</span>
+                            <img src="icone/direita.avif" alt="" class="wreath-right">
+                        </div>
+                        <h3 class="titulo-principal">Preferido dos hóspedes</h3>
+                        <p class="descricao-principal">Esta acomodação é uma das preferidas dos hóspedes, baseado em avaliações, comentários e confiabilidade</p>
+                    </div>
+
+                    <div class="detalhes-rating-container">
+                        <div class="detalhes-rating-item avaliacao-geral-item">
+                            <span class="rating-label">Avaliação geral</span>
+                            <div class="grafico-barras-container">
+                                <div class="grafico-linha"><span class="grafico-label">5</span><div class="barra-base"><div class="barra-fill" style="width: 98%;"></div></div></div>
+                                <div class="grafico-linha"><span class="grafico-label">4</span><div class="barra-base"><div class="barra-fill" style="width: 80%;"></div></div></div>
+                                <div class="grafico-linha"><span class="grafico-label">3</span><div class="barra-base"><div class="barra-fill" style="width: 50%;"></div></div></div>
+                                <div class="grafico-linha"><span class="grafico-label">2</span><div class="barra-base"><div class="barra-fill" style="width: 20%;"></div></div></div>
+                                <div class="grafico-linha"><span class="grafico-label">1</span><div class="barra-base"><div class="barra-fill" style="width: 5%;"></div></div></div>
+                            </div>
+                        </div>
+
+                        <div class="detalhes-rating-item">
+                            <span class="rating-label">Limpeza</span>
+                            <span class="rating-valor">4,9</span>
+                            <i data-feather="droplet"></i>
+                        </div>
+
+                        <div class="detalhes-rating-item">
+                            <span class="rating-label">Exatidão do anúncio</span>
+                            <span class="rating-valor">4,9</span>
+                            <i data-feather="check-circle"></i>
+                        </div>
+
+                        <div class="detalhes-rating-item">
+                            <span class="rating-label">Check-in</span>
+                            <span class="rating-valor">5,0</span>
+                            <i data-feather="key"></i>
+                        </div>
+
+                        <div class="detalhes-rating-item">
+                            <span class="rating-label">Comunicação</span>
+                            <span class="rating-valor">5,0</span>
+                            <i data-feather="message-square"></i>
+                        </div>
+
+                        <div class="detalhes-rating-item">
+                            <span class="rating-label">Custo-benefício</span>
+                            <span class="rating-valor">4,9</span>
+                            <i data-feather="tag"></i>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="container-comentarios">
+                        <div class="cartao-comentario">
+                            <div class="comentario-cabecalho">
+                                <img src="apartamento/daiane.avif" alt="Foto de Daiane" class="foto-perfil-comentario">
+                                <div class="info-usuario-comentario">
+                                    <h3>Daiane</h3>
+                                    <p>8 meses no Airbnb</p>
+                                </div>
+                            </div>
+                            <div class="comentario-meta">
+                                <span class="estrelas-comentario">★★★★★</span>
+                                <span class="data-comentario">2 semanas atrás</span>
+                                <span>·</span>
+                                <span class="duracao-estadia">Ficou algumas noites</span>
+                            </div>
+                            <p class="texto-comentario">
+                                Minha experiência foi muito boa, tudo igual ao anúncio, Marcelo sempre prestativo nas respostas apto super limpo e organizado estão de parabéns, uma dica que eu daria de...
+                            </p>
+                            <a href="#" class="mostrar-mais">Mostrar mais</a>
+                        </div>
+    
+                        <div class="cartao-comentario">
+                            <div class="comentario-cabecalho">
+                                <img src="apartamento/marcelo.avif" alt="Foto de Marcelo" class="foto-perfil-comentario">
+                                <div class="info-usuario-comentario">
+                                    <h3>Marcelo</h3>
+                                    <p>4 anos no Airbnb</p>
+                                </div>
+                            </div>
+                            <div class="comentario-meta">
+                                <span class="estrelas-comentario">★★★★★</span>
+                                <span class="data-comentario">3 semanas atrás</span>
+                                <span>·</span>
+                                <span class="duracao-estadia">Ficou algumas noites</span>
+                            </div>
+                            <p class="texto-comentario">
+                                Período maravilhoso, nos atendeu plenamente pela localização e pela facilidade de acesso aos locais que precisávamos....
+                            </p>
+                            <a href="#" class="mostrar-mais">Mostrar mais</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="formulario-reserva">
+                <div class="card-reserva">
+                    <div class="datas">
+                        <div class="data-item">
+                            <span>CHECK-IN</span>
+                            28/08/2025
+                        </div>
+                        <div class="data-item">
+                            <span>CHECKOUT</span>
+                            31/08/2025
+                        </div>
+                    </div>
+                    <div class="hospedes">
+                        HÓSPEDES
+                        <p>1 hóspede</p>
+                    </div>
+                    <div class="erro-mensagem">
+                        <i data-feather="alert-triangle"></i> Something went wrong, try your dates again
+                    </div>
+                    <button class="botao-reservar">Alterar datas</button>
+                </div>
+                <a href="#" class="denunciar-anuncio">Denunciar este anúncio</a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 - Apartamento na Praia</p>
-    </footer>
-</body>
+    <hr class="hr-footer">
 
+    <footer class="rodape">
+        <div class="rodape-principal">
+            <div class="caminho-navegacao">
+                <span>Airbnb</span> &nbsp;›&nbsp; <span>Brasil</span> &nbsp;›&nbsp; <span>Região Sudeste do Brasil</span>
+            </div>
+            <div class="rodape-links">
+                <div class="coluna-links">
+                    <h3>Atendimento</h3>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Receber ajuda com problema de segurança</a></li>
+                        <li><a href="#">AirCover</a></li>
+                        <li><a href="#">Antidiscriminação</a></li>
+                        <li><a href="#">Apoio à pessoa com deficiência</a></li>
+                        <li><a href="#">Opções de cancelamento</a></li>
+                        <li><a href="#">Reporte um problema no bairro</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-links">
+                    <h3>Hospedagem</h3>
+                    <ul>
+                        <li><a href="#">Anuncie seu espaço no Airbnb</a></li>
+                        <li><a href="#">Anuncie sua experiência no Airbnb</a></li>
+                        <li><a href="#">Anuncie seu serviço no Airbnb</a></li>
+                        <li><a href="#">AirCover para anfitriões</a></li>
+                        <li><a href="#">Recursos para anfitriões</a></li>
+                        <li><a href="#">Fórum da comunidade</a></li>
+                        <li><a href="#">Hospedagem responsável</a></li>
+                        <li><a href="#">Participe de uma aula gratuita de hospedagem</a></li>
+                        <li><a href="#">Encontre um coanfitrião</a></li>
+                    </ul>
+                </div>
+                <div class="coluna-links">
+                    <h3>Airbnb</h3>
+                    <ul>
+                        <li><a href="#">Airbnb 2025 - edição de maio</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Investidores</a></li>
+                        <li><a href="#">Locais emergenciais Airbnb.org</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rodape-secundario">
+            <div class="links-legais">
+                <span>© 2025 Airbnb, Inc.</span>
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Mapa do site</a>
+                <a href="#">Informações da empresa</a>
+            </div>
+            <div class="opcoes-globais">
+                <a href="#"><i data-feather="globe"></i> Português (BR)</a>
+                <a href="#">R$ BRL</a>
+                <div class="redes-sociais">
+                    <a href="#"><i data-feather="facebook"></i></a>
+                    <a href="#"><i data-feather="twitter"></i></a>
+                    <a href="#"><i data-feather="instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
 </html>
