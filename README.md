@@ -1,68 +1,47 @@
-## 📌 Sobre o Projeto
+# 🏠 Airbnb Clone — Página de Anúncio em HTML e CSS
 
-Este é um projeto acadêmico focado na criação de uma landing page que simula um anúncio de imóvel da plataforma Airbnb. O objetivo principal é praticar e demonstrar o uso de HTML e CSS para construir uma página web estática, responsiva e visualmente organizada. O projeto se baseia em um anúncio real para replicar sua estrutura e design.
+Landing page estática que reproduz um anúncio real de apartamento do Airbnb, feita para o checkpoint de Front-end Design da FIAP.
 
-**Link do GitHub Pages**
-
-- https://neres73.github.io/CP-CAIO/
+**🔗 Ver online:** https://neres73.github.io/CP-CAIO/
 
 ---
 
-## 🚀 Objetivo do Projeto
+## Sobre o projeto
 
-O principal objetivo é criar uma página estática que aplique os conceitos essenciais de Front-end Design aprendidos em sala de aula, incluindo:
+O objetivo era aplicar os fundamentos de front-end vistos em aula reconstruindo a estrutura e o visual de uma página real, sem framework e sem JavaScript: só HTML semântico e CSS.
 
-Estrutura HTML5 válida e semântica.
+## O que a página tem
 
-Estilização completa com CSS externo.
+- **Cabeçalho** com logo, busca e menu
+- **Título do anúncio** e **galeria com cinco fotos** do imóvel
+- **Descrição** e **detalhes da hospedagem** (tipo de acomodação, hóspedes, quartos e banheiros)
+- **Comodidades** do imóvel
+- **Avaliações** de hóspedes
+- **Rodapé**
 
-Utilização de Google Fonts para tipografia.
+## Como foi feito
 
-Organização do layout usando Flexbox e Grid.
+- **HTML5 semântico**: `header`, `main`, `section` e `footer`
+- **CSS externo** em `style.css`, com tipografia **Poppins** do Google Fonts
+- **Flexbox** para a barra de navegação e os alinhamentos, e **CSS Grid** para a galeria de fotos e as avaliações
+- **Mobile first**: o layout base é para celular e se reorganiza a partir de 768px de largura
 
-Inclusão de todos os elementos solicitados no enunciado, como galeria de fotos, descrições, comodidades e avaliações.
+## Estrutura
 
-Criação de um layout responsivo que se adapte a diferentes tamanhos de tela.
+```
+├── index.html
+├── style.css
+├── apartamento/   # fotos do imóvel e das avaliações
+├── icone/         # ícones de navegação
+└── imgs/          # logo e ícones do cabeçalho
+```
 
----
+## Como rodar
 
-## 🛠️ Conteúdo da Página
-
-A página foi desenvolvida com as seguintes seções e informações:
-
-Título do Anúncio: Nome do imóvel.
-
-Galeria de Imagens: Cinco fotos do imóvel, organizadas em um layout de grade.
-
-Descrição do Imóvel: Parágrafos com detalhes sobre o espaço.
-
-Detalhes da Hospedagem: Informações como tipo de acomodação, número de hóspedes, quartos e banheiros.
-
-Comodidades: Lista das facilidades oferecidas.
-
-Avaliações: Duas avaliações simuladas, incluindo nome do hóspede e seu comentário.
-
----
-
-## 🎨 Tecnologias e Estilização
-
-Linguagens: HTML5 e CSS3.
-
-Fontes: As fontes utilizadas foram importadas do Google Fonts.
-
-Layout: A organização da página foi feita utilizando as propriedades Flexbox (para a barra de navegação e alinhamentos) e Grid Layout (para a galeria de fotos e a seção de avaliações).
-
-Estrutura: O código foi organizado em uma estrutura de pastas simples e coerente, com o HTML, CSS e imagens em seus respectivos diretórios.
+Não precisa de instalação: abra o `index.html` no navegador ou acesse o link do GitHub Pages.
 
 ---
 
-## 🔗 Informações de Entrega
+**Integrantes:** Gustavo Neres dos Santos (RM561785) · Rafaell Santiago Martins da Silva (RM563486)
 
-Anúncio Original:https: https://www.airbnb.com.br/rooms/30497949?check_in=2025-08-29&check_out=2025-08-31&photo_id=628618755&source_impression_id=p3_1756245157_P31SZfHCSdpt29Io&previous_page_section_name=1000
-
-Integrantes:
-
-Gustavo Neres Dos Santos RM561785
-
-Rafaell Santiago Martins Da Silva RM563486
-
+Projeto acadêmico. A marca, as imagens e o conteúdo do anúncio pertencem ao Airbnb e ao anfitrião do [anúncio original](https://www.airbnb.com.br/rooms/30497949) e foram usados apenas para fins de estudo.
